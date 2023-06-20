@@ -1,0 +1,153 @@
+@import 'assets/scss/_base.scss';
+
+.header {
+  background-color: $primary-black;
+  padding: 22px;
+
+  &__nav {
+    justify-content: space-between;
+    display: flex;
+
+    nav {
+      display: none;
+    }
+  }
+
+  &__search{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 58px;
+    padding: 25px 0;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+
+    & input {
+      width: 225px;
+      height: 37px;
+      border: 1px solid $primary-black;
+      padding-left: 12px;
+      font-size: 15px;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 13px;
+        color: $secondary-gray;
+      }
+    }
+
+    & button {
+      border: 1px solid $primary-black;
+      width: 88px;
+      height: 37px;
+      color: $primary-black;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+      background-color: $primary-white;
+    }
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 10px 23px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &__nav {
+      gap: 20px;
+
+      & nav {
+        display: block;
+        & ul {
+          display: flex;
+          gap: 20px;
+
+          & li {
+            color: $primary-white;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    &__logo {
+      width: 99px;
+    }
+
+    &__icon-hamb {
+      display: none;
+    }
+
+    &__search {
+      position: unset;
+      padding: 0;
+
+      & input {
+        width: 145px;
+      }
+
+      & button {
+        width: 67px;
+        border-color: $primary-white;
+        color: $primary-white;
+        background-color: $primary-black;
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    &__logo {
+      width: 132px;
+    }
+
+    &__nav {
+      gap: 40px;
+
+      & nav {
+
+        & ul {
+          gap: 40px;
+
+          & li {
+            font-size: 16px;
+
+            &:hover {
+              text-decoration: underline;
+              transition: 0.4s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+
+    &__search {
+
+
+      & input {
+        width: 170px;
+
+        &::placeholder {
+          font-size: 15px;
+        }
+      }
+
+      & button {
+        width: 80px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $secondary-gray;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
