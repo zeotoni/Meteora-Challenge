@@ -14,11 +14,11 @@ export class BannerComponent implements OnInit {
       this.slides = this.slidesMobile;
     }
 
-    if(window.innerWidth >= 768 && window.innerWidth < 1024) {
+    if(window.innerWidth >= 768 && window.innerWidth < 1200) {
       this.slides = this.slidesTablet
     }
 
-    if(window.innerWidth >= 1024) {
+    if(window.innerWidth >= 1200) {
       this.slides = this.slidesDesktop
     }
   }
@@ -47,11 +47,11 @@ export class BannerComponent implements OnInit {
     if(window.innerWidth < 768) {
       this.slides = this.slidesMobile;
     }
-    if(window.innerWidth >= 768 && window.innerWidth < 1024) {
+    if(window.innerWidth >= 768 && window.innerWidth < 1200) {
       this.slides = this.slidesTablet
     }
 
-    if(window.innerWidth >= 1024) {
+    if(window.innerWidth >= 1200) {
       this.slides = this.slidesDesktop
     }
   }

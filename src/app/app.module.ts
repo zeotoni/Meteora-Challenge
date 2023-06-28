@@ -1,3 +1,4 @@
+import { CategoryModule } from './components/category/category.module';
 import { HeaderModule } from './components/header/header.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,9 +17,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    NgbModule,
     HeaderModule,
     BannerModule,
-    NgbModule
+    CategoryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
