@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BannerModule } from './components/banner/banner.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProductsModule } from './components/products/products.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
     HeaderModule,
     BannerModule,
-    CategoryModule
+    CategoryModule,
+    ProductsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
