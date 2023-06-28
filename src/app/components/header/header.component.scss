@@ -3,13 +3,124 @@
 .header {
   background-color: $primary-black;
   padding: 22px;
+  font-family: 'Inter', sans-serif;
+
+  &__logo {
+    width: 125px;
+    height: 18px;
+  }
 
   &__nav {
     justify-content: space-between;
     display: flex;
+    align-items: center;
+
+
+    & .menu-hamb {
+
+      position: absolute;
+      right: 30px;
+
+      .visuallyHidden {
+        position: absolute;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+      }
+
+      .hamburger {
+        width: 30px;
+        height: 30px;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .bar {
+        padding: 0;
+        width: 25px;
+        height: 2.4px;
+        background-color: $primary-yellow;
+        color: $primary-yellow;
+        display: block;
+        border-radius: 4px;
+        transition: all 0.4s ease-in-out;
+        position: absolute;
+      }
+
+      .bar1 {
+        top: 9px;
+      }
+
+      .bar2,
+      .bar3 {
+        top: 15px;
+      }
+
+      .bar4 {
+        bottom: 6px;
+      }
+
+      .checkbox:checked + label > .hamburger > .bar1{
+        transform: rotate(45deg);
+        transform-origin: 12%;
+        width: 25px
+      }
+
+      .checkbox:checked + label > .hamburger > .bar2 {
+        transform: translateX(-40px);
+        background-color: transparent;
+      }
+
+      .checkbox:checked + label > .hamburger > .bar3 {
+        transform: translateX(40px);
+        background-color: transparent;
+      }
+
+      .checkbox:checked + label > .hamburger > .bar4 {
+        transform-origin: 12%;
+        transform: rotate(-45deg);
+        width: 25px;
+      }
+    }
 
     nav {
-      display: none;
+
+      & ul {
+        display: none;
+        z-index: 10;
+        position: absolute;
+        padding: 24px;
+        top: 62px;
+        right: 0;
+        background-color: $secondary-gray;
+        width: 144px;
+        flex-direction: column;
+        gap: 8px;
+
+        & li {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          color: $primary-white;
+          padding-bottom: 8px;
+          border-bottom: 1px solid #CED4DA;
+
+          &:last-of-type {
+            border: none;
+            padding-bottom: 0;
+          }
+        }
+      }
+
+      .visible {
+        display: flex;
+      }
     }
   }
 
@@ -33,7 +144,7 @@
       &::placeholder {
         font-weight: 400;
         font-size: 13px;
-        color: $secondary-gray;
+        color: $placeholder-gray;
       }
     }
 
@@ -61,13 +172,25 @@
     &__nav {
       gap: 20px;
 
+      & .menu-hamb {
+        display: none;
+      }
+
       & nav {
         display: block;
+
         & ul {
           display: flex;
           gap: 20px;
+          position: unset;
+          flex-direction: row;
+          background-color: unset;
+          width: unset;
+          padding: 0;
 
           & li {
+            border: none;
+            padding-bottom: 0;
             color: $primary-white;
             font-size: 13px;
           }
@@ -77,10 +200,6 @@
 
     &__logo {
       width: 99px;
-    }
-
-    &__icon-hamb {
-      display: none;
     }
 
     &__search {

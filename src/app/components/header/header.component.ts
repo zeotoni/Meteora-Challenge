@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  isVisible: boolean = false;
+
+  toggleShowUl() {
+    this.isVisible = !this.isVisible;
+  }
 }

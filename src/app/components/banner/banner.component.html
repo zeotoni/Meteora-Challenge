@@ -1,0 +1,27 @@
+<section class="banner">
+  <ngb-carousel *ngIf="slides">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="slides[0].src" alt="Uma modelo encostada numa parede roxa" />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="slides[1].src" alt="Uma modelo sentada num sofá preto" />
+      </div>
+      <div class="carousel-caption">
+        <h3>COLEÇÃO ATEMPORAL</h3>
+        <p>Estilo e qualidade para durar.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="slides[2].src" alt="Um modelo em pé em frente a uma parede laranja" />
+      </div>
+      <div class="carousel-caption third-slide">
+        <h3>COLEÇÃO ATEMPORAL</h3>
+        <p>Alto impacto visual, baixo impacto ambiental.</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</section>
