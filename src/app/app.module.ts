@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { BannerModule } from './components/banner/banner.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductsModule } from './components/products/products.module';
+import { FacilitiesModule } from './components/facilities/facilities.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProductsModule } from './components/products/products.module';
     HeaderModule,
     BannerModule,
     CategoryModule,
-    ProductsModule
+    ProductsModule,
+    FacilitiesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
