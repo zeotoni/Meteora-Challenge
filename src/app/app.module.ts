@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductsModule } from './components/products/products.module';
 import { FacilitiesModule } from './components/facilities/facilities.module';
 import { NewsletterModule } from './components/newsletter/newsletter.module';
+import { FooterModule } from './components/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NewsletterModule } from './components/newsletter/newsletter.module';
     CategoryModule,
     ProductsModule,
     FacilitiesModule,
-    NewsletterModule
+    NewsletterModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
