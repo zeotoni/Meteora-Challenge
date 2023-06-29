@@ -87,6 +87,14 @@
       grid-template-columns: 1fr 1fr 1fr;
       width: 1032;
       margin: 0 auto;
+
+      &-card {
+        width: 350px;
+
+        & img {
+          width: 350px;
+        }
+      }
     }
   }
 }
