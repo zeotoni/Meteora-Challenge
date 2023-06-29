@@ -1,0 +1,81 @@
+@import 'assets/scss/_base.scss';
+
+.newsletter {
+  margin: 40px auto;
+  text-align: center;
+  width: 321px;
+  padding: 24px;
+  border: 1px solid $primary-black;
+
+  & p {
+    padding-bottom: 24px;
+    color: $title-gray;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+  }
+
+  &__input-div {
+
+    display: flex;
+
+    & input {
+      width: 205px;
+      height: 38px;
+      padding-left: 15px;
+      border: 1px solid $primary-black;
+      border-right: none;
+    }
+
+    & button {
+      width: 84px;
+      height: 38px;
+      padding: 0;
+
+      &::placeholder {
+        color: $placeholder-gray;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .newsletter {
+    width: 690px;
+    padding: 40px;
+
+    & p {
+      font-size: 20px;
+    }
+
+    &__input-div {
+
+      justify-content: center;
+
+      & input {
+        width: 357px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .newsletter {
+
+    width: 729px;
+    margin: 65px auto;
+
+
+    &__input-div > input{
+
+      width: 456px;
+    }
+  }
+}

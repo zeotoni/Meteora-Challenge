@@ -8,6 +8,16 @@ $secondary-salmon: #EE6471;
 $secondary-orange: #F87F46;
 $secondary-gray: #343A40;
 
-$placeholder-gray: #65757d;
+$placeholder-gray: #6c757d;
 $title-gray: #212529;
+
+.btn {
+  color: $primary-white;
+  background-color: $primary-lilac;
+  font-size: 16px;
+  font-weight: 500;
+  border: solid 1px $primary-lilac;
+  padding: 9px 16px;
+  border-radius: 0;
+}
 

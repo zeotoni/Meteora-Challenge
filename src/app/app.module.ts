@@ -10,6 +10,7 @@ import { BannerModule } from './components/banner/banner.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductsModule } from './components/products/products.module';
 import { FacilitiesModule } from './components/facilities/facilities.module';
+import { NewsletterModule } from './components/newsletter/newsletter.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FacilitiesModule } from './components/facilities/facilities.module';
     BannerModule,
     CategoryModule,
     ProductsModule,
-    FacilitiesModule
+    FacilitiesModule,
+    NewsletterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
