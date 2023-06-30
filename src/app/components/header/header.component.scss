@@ -69,7 +69,7 @@
       .checkbox:checked + label > .hamburger > .bar1{
         transform: rotate(45deg);
         transform-origin: 12%;
-        width: 25px
+        width: 24px
       }
 
       .checkbox:checked + label > .hamburger > .bar2 {
@@ -85,7 +85,7 @@
       .checkbox:checked + label > .hamburger > .bar4 {
         transform-origin: 12%;
         transform: rotate(-45deg);
-        width: 25px;
+        width: 24px;
       }
     }
 

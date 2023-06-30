@@ -12,16 +12,16 @@
   }
 
   &__cards {
-    gap: 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 324px;
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 316px;
     margin: 0 auto;
 
     &-card {
 
       & img {
-        width: 150px;
+        width: 146px;
       }
 
       & p {
@@ -43,9 +43,9 @@
     padding: 40px 40px 45px;
 
     &__cards {
-      grid-template-columns: 1fr 1fr 1fr;
       width: 675px;
       margin: 0 auto;
+      gap: 24px;
 
       &-card {
 
@@ -70,6 +70,7 @@
     &__cards {
       display: flex;
       justify-content: center;
+      flex-wrap: nowrap;
       gap: 30px;
 
       &-card {
