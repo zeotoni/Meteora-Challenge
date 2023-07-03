@@ -1,5 +1,4 @@
-import { ModalService } from './../modal/modal.service';
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-newsletter',
