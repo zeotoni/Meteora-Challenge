@@ -1,0 +1,171 @@
+@import 'assets/scss/_base.scss';
+
+.products__modal {
+  z-index: 3;
+  width: 343px;
+  border: none;
+  border-radius: 4px;
+  background: $primary-white;
+  box-shadow: 0px 4px 15px 0px rgba(44, 63, 88, 0.35);
+  margin: 0 auto;
+  top: 5%;
+
+  &::backdrop {
+    background: rgba(0, 0, 0, .7);
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: $primary-black;
+    padding: 18px;
+    border-radius: 4px 4px 0 0;
+
+    & div {
+      display: flex;
+      align-items: center;
+
+      & h2 {
+        color: $primary-white;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: initial;
+        margin-left: 20px
+      }
+    }
+
+    & button {
+      width: 16px;
+      height: 16px;
+      border: none;
+      background-color: inherit;
+    }
+  }
+
+  &-body {
+    padding: 16px 16px 32px;
+
+    & img {
+      width: 311px;
+    }
+
+    &-info {
+      // border: 1px solid rgba(0, 0, 0, 0.13);
+      padding: 24px 16px 0;
+      text-align: initial;
+      color: $title-gray;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      & h3 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 23px;
+      }
+
+      & p {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid $primary-black;
+      }
+
+      & span {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+
+      }
+
+      & .info__store-name {
+        color: #ADB5BD;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #D8D8D8;
+      }
+    }
+
+    & form {
+
+      padding: 16px 16px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      text-align: initial;
+
+      & .form__section {
+
+        & p {
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 20px;
+          padding-bottom: 16px;
+        }
+
+        &-inputs {
+          display: flex;
+          gap: 16px;
+
+          & div {
+            text-align: center;
+
+            & label {
+              font-size: 13px;
+              font-weight: 400;
+              line-height: 20px;
+            }
+          }
+        }
+
+      }
+
+      & button {
+        width: 180px;
+      }
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .products__modal {
+    width: 700px;
+
+    &-header {
+      padding: 18px 22px;
+
+      & div > h2{
+        font-size: 20px;
+      }
+
+      & button {
+        width: 16px;
+        height: 16px;
+        border: none;
+        background-color: inherit;
+      }
+    }
+
+    &-body {
+      display: flex;
+
+      & img {
+        width: 350px;
+        height: 422px;
+      }
+
+      &-info {
+        padding: 0 16px 0;
+      }
+    }
+  }
+}

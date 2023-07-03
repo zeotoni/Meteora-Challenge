@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NewsletterComponent } from './newsletter.component';
+import { ModalsModule } from '../modals/modals.module';
 
 
 
@@ -9,7 +10,8 @@ import { NewsletterComponent } from './newsletter.component';
     NewsletterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ModalsModule
   ],
   exports: [
     NewsletterComponent

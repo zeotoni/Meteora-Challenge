@@ -1,0 +1,65 @@
+<dialog class="products__modal" #modal>
+  <div class="products__modal-header">
+    <div>
+      <img src="assets/check-circle.svg" alt="Ícone de check">
+      <h2>Confira detalhes sobre o produto</h2>
+    </div>
+    <button type="submit" (click)="modal.close()"><img src="assets/⭐️ Icon.svg" alt="Ícone de x"></button>
+  </div>
+  <div class="products__modal-body">
+    <img src="assets/Desktop/Imagens Cards/Jaqueta.png" alt="">
+    <div>
+      <div class="products__modal-body-info">
+        <h3>Jaqueta Jeans</h3>
+        <p class="info-text">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
+        <span class="info-price">R$ 150,00</span>
+        <p class="info__store-name">Vendido e entregue por Riachuelo</p>
+      </div>
+      <form method="dialog">
+        <div class="form__section">
+          <p>Cores:</p>
+          <div class="form__section-inputs">
+            <div>
+              <input class="input__azul" name="color" id="azul-claro" type="radio" value="azul-claro">
+              <label for="azul-claro">Azul claro</label>
+            </div>
+            <div>
+              <input class="input__offwhite" name="color" id="offwhite" type="radio" value="offwhite">
+              <label for="offwhite">Offwhite</label>
+            </div>
+            <div>
+              <input class="input__preto" name="color" id="preto" type="radio" value="preto">
+              <label for="preto">Preto</label>
+            </div>
+          </div>
+        </div>
+        <div class="form__section">
+          <p>Tamanhos:</p>
+          <div class="form__section-inputs">
+            <div>
+              <input name="size" id="tamanho-p" value="tamanho-p" type="radio">
+              <label for="tamanho-p">P</label>
+            </div>
+            <div>
+              <input name="size" id="tamanho-pp" value="tamanho-pp" type="radio">
+              <label for="tamanho-pp">PP</label>
+            </div>
+            <div>
+              <input name="size" id="tamanho-m" value="tamanho-m" type="radio">
+              <label for="tamanho-m">M</label>
+            </div>
+            <div>
+              <input name="size" id="tamanho-g" value="tamanho-g" type="radio">
+              <label for="tamanho-g">G</label>
+            </div>
+            <div>
+              <input name="size" id="tamanho-gg" value="tamanho-gg" type="radio">
+              <label for="tamanho-gg">GG</label>
+            </div>
+          </div>
+        </div>
+        <button class="btn" type="submit">Adicionar à sacola</button>
+      </form>
+    </div>
+  </div>
+</dialog>

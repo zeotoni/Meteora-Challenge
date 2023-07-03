@@ -1,7 +1,8 @@
 <section class="newsletter">
   <p>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</p>
-  <div class="newsletter__input-div">
-    <input type="email" aria-label="Input para email" placeholder="Digite seu email">
-    <button class="btn">Enviar</button>
-  </div>
+  <form method="dialog" (submit)="showModal()">
+    <input #inputEmail type="email" aria-label="Input para email" placeholder="Digite seu email" required>
+    <button type="submit" class="btn">Enviar</button>
+  </form>
+  <app-modal-newsletter #modal></app-modal-newsletter>
 </section>

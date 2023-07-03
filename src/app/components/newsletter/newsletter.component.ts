@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ModalService } from './../modal/modal.service';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-newsletter',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class NewsletterComponent {
 
+  @ViewChild('modal') modalTemplateRef!: ElementRef;
+  @ViewChild('inputEmail') inputEmail: any;
+
+  constructor() {}
+
+  showModal(){
+    this.inputEmail.nativeElement.value = '';
+    this.modalTemplateRef.nativeElement.firstChild.showModal();
+  }
 }

@@ -16,7 +16,7 @@
     line-height: 23px;
   }
 
-  &__input-div {
+  & form {
 
     display: flex;
 
@@ -54,7 +54,7 @@
       font-size: 20px;
     }
 
-    &__input-div {
+    & form {
 
       justify-content: center;
 
@@ -73,7 +73,7 @@
     margin: 65px auto;
 
 
-    &__input-div > input{
+    & form > input{
 
       width: 456px;
     }

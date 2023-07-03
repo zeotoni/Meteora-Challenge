@@ -1,13 +1,21 @@
 <section class="banner">
-  <ngb-carousel *ngIf="slides">
+  <ngb-carousel>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
-        <img [src]="slides[0].src" alt="Uma modelo encostada numa parede roxa" />
+        <picture>
+          <source srcset="assets/Desktop/banner.png" media="(min-width: 1200px)">
+          <source srcset="assets/Tablet/Bannercarousel1_768.png" media="(min-width: 768px)">
+          <img src="assets/Mobile/Banner carousel 1 _ 375.png" alt="Uma modelo encostada numa parede roxa">
+        </picture>
       </div>
     </ng-template>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
-        <img [src]="slides[1].src" alt="Uma modelo sentada num sofá preto" />
+        <picture>
+          <source srcset="assets/Desktop/Bannercarousel2_1440.png" media="(min-width: 1200px)" >
+          <source srcset="assets/Tablet/Bannercarousel2_768.png" media="(min-width: 768px)" >
+          <img src="assets/Mobile/Banner carousel 2 _ 375.png" alt="Uma modelo sentada num sofá preto">
+        </picture>
       </div>
       <div class="carousel-caption">
         <h3>COLEÇÃO ATEMPORAL</h3>
@@ -16,7 +24,11 @@
     </ng-template>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
-        <img [src]="slides[2].src" alt="Um modelo em pé em frente a uma parede laranja" />
+        <picture>
+          <source srcset="assets/Desktop/Bannercarousel3_1440.png" media="(min-width: 1200px)" >
+          <source srcset="assets/Tablet/Bannercarousel3_768.png" media="(min-width: 768px)" >
+          <img src="assets/Mobile/Banner carousel 3 _ 375.png" alt="Um modelo em pé em frente a uma parede laranja">
+        </picture>
       </div>
       <div class="carousel-caption third-slide">
         <h3>COLEÇÃO ATEMPORAL</h3>

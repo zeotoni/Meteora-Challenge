@@ -1,0 +1,79 @@
+@import 'assets/scss/_base.scss';
+
+.modal__newsletter {
+  width: 343px;
+  border: none;
+  border-radius: 4px;
+  background: $primary-white;
+  box-shadow: 0px 4px 15px 0px rgba(44, 63, 88, 0.35);
+  margin: 0 auto;
+  top: 30%;
+
+  &::backdrop {
+    background: rgba(0, 0, 0, .7);
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: $primary-black;
+    padding: 18px;
+    border-radius: 4px 4px 0 0;
+
+    & div {
+      display: flex;
+      align-items: center;
+
+      & h2 {
+        color: $primary-white;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: initial;
+        margin-left: 20px
+      }
+    }
+
+    & button {
+      width: 16px;
+      height: 16px;
+      border: none;
+      background-color: inherit;
+    }
+  }
+
+  & p {
+    padding: 16px;
+    color: $title-gray;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: initial;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .modal__newsletter {
+    width: 700px;
+
+    &-header {
+      padding: 18px 22px;
+
+      & div > h2{
+        font-size: 20px;
+      }
+
+      & button {
+        width: 16px;
+        height: 16px;
+        border: none;
+        background-color: inherit;
+      }
+    }
+  }
+}

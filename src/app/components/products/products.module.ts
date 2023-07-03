@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductsComponent } from './products.component';
+import { ModalsModule } from '../modals/modals.module';
 
 
 
@@ -9,7 +10,8 @@ import { ProductsComponent } from './products.component';
     ProductsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ModalsModule
   ],
   exports: [
     ProductsComponent

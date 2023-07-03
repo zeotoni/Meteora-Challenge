@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-products',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ProductsComponent {
 
+  @ViewChild('modal') modalTemplateRef!: ElementRef;
+
+  showModal(){
+    this.modalTemplateRef.nativeElement.firstChild.showModal();
+  }
 }

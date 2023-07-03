@@ -10,7 +10,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     CommonModule,
-    NgbCarouselModule
+    NgbCarouselModule,
   ],
   exports: [
     BannerComponent
