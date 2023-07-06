@@ -1,4 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, Input } from '@angular/core';
 
 @Component({
   selector: 'app-modal-product',
@@ -8,6 +8,14 @@ import { Component, ElementRef } from '@angular/core';
 export class ModalProductComponent {
 
   nativeElement: HTMLElement;
+
+  @Input() image = ''
+  @Input() alt = '';
+  @Input() title = '';
+  @Input() description = '';
+  @Input() price = '';
+  @Input() store = '';
+  @Input() category = '';
 
   constructor(element: ElementRef) {
     this.nativeElement = element.nativeElement;

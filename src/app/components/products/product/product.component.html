@@ -1,0 +1,18 @@
+<div class="card">
+  <img [src]="image" [alt]="alt">
+  <div class="card__info">
+    <h3>{{title}}</h3>
+    <p>{{description}}</p>
+    <span>R$ {{price}}</span>
+    <button class="btn" (click)="showModal()">Ver mais</button>
+  </div>
+  <app-modal-product #modal
+  [image]="image"
+  [alt]="alt"
+  [title]="title"
+  [description]="description"
+  [price]="price"
+  [store]="store"
+
+  ></app-modal-product>
+</div>

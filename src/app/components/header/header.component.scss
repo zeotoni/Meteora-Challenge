@@ -141,6 +141,10 @@
       padding-left: 12px;
       font-size: 15px;
 
+      &:focus {
+        outline: 0;
+      }
+
       &::placeholder {
         font-weight: 400;
         font-size: 13px;

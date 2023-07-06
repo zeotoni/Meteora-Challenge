@@ -13,6 +13,7 @@ import { FacilitiesModule } from './components/facilities/facilities.module';
 import { NewsletterModule } from './components/newsletter/newsletter.module';
 import { FooterModule } from './components/footer/footer.module';
 import { ModalsModule } from './components/modals/modals.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ModalsModule } from './components/modals/modals.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     NgbModule,
+    HttpClientModule,
     HeaderModule,
     BannerModule,
     CategoryModule,

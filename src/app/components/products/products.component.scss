@@ -18,45 +18,7 @@
     justify-content: center;
     gap: 30px;
 
-    &-card {
-      width: 310px;
-      margin: 0 auto;
-      border: 1px solid rgba(0, 0, 0, 0.13);
 
-      & img {
-        width: 308px;
-        height: 402px;
-      }
-
-      &-info {
-        text-align: initial;
-        padding: 13px 16px 16px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-
-        & h3 {
-          font-size: 16px;
-          font-weight: 700;
-          line-height: 23px;
-        }
-
-        & p {
-          font-size: 13px;
-          line-height: 20px;
-        }
-
-        & span {
-          font-size: 16px;
-          font-weight: 700;
-          line-height: 23px;
-        }
-
-        & button {
-          width: 110px;
-        }
-      }
-    }
   }
 }
 

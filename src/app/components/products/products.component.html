@@ -1,7 +1,16 @@
 <section class="products">
   <h2 class="products__title">Produtos que estão bombando!</h2>
   <div class="products__cards">
-    <div class="products__cards-card">
+    <div *ngFor="let product of products">
+      <app-product
+      [image]="product.image"
+      [alt]="product.alt"
+      [title]="product.title"
+      [description]="product.description"
+      [price]="product.price"
+      ></app-product>
+    </div>
+    <!-- <div class="products__cards-card">
       <img src="assets/Mobile/Imagens cards/Card camiseta.png" alt="modelo usando uma camiseta amarela">
       <div class="products__cards-card-info">
         <h3>Camiseta Conforto</h3>
@@ -54,7 +63,7 @@
         <span>R$ 120,00</span>
         <button class="btn" (click)="showModal()">Ver mais</button>
       </div>
-    </div>
+    </div> -->
   </div>
   <app-modal-product #modal></app-modal-product>
 </section>
