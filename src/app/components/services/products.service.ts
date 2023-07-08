@@ -15,4 +15,8 @@ export class ProductsService {
   getAllProducts(): Observable<Product[]> {
     return this.httpClient.get<Product[]>(API)
   }
+
+  getByCategory(category: string): Observable<Product[]> {
+    return this.httpClient.get<Product[]>(`${API}?category=${category}`)
+  }
 }
