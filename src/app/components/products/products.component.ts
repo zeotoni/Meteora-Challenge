@@ -21,8 +21,8 @@ export class ProductsComponent implements OnInit, AfterViewInit{
   ){}
 
   ngOnInit(): void {
-    this.productsService.getByCategory('').subscribe((product) => {
-      this.products = product;
+    this.productsService.getAllProducts().subscribe((products) => {
+      this.products = products;
     })
   }
 
@@ -35,16 +35,12 @@ export class ProductsComponent implements OnInit, AfterViewInit{
   }
 
   getProductsList() {
-    let listSubject: Product[] = [];
-    this.subscriptionList = this.productListService.getUpdatedList().subscribe((i) => {
-      listSubject = i
-      this.products = listSubject;
-      if(listSubject.length) {
-      } else {
-        this.productsService.getByCategory('').subscribe((product) => {
-          this.products = product;
-        })
-      }
+    this.subscriptionList = this.productListService.getUpdatedList().subscribe((list) => {
+      this.products = list;
     })
   }
+
+
+
+
 }
