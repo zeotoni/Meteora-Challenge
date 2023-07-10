@@ -12,11 +12,15 @@ export class ProductsService {
 
   constructor(private httpClient: HttpClient) { }
 
+  getAllProducts(): Observable<Product[]> {
+    return this.httpClient.get<Product[]>(API)
+  }
+
   getByCategory(category: string): Observable<Product[]> {
     return this.httpClient.get<Product[]>(`${API}/category?category=${category}`)
   }
 
-  getAllProducts(): Observable<Product[]> {
-    return this.httpClient.get<Product[]>(API)
+  getByTitle(title: string): Observable<Product[]> {
+    return this.httpClient.get<Product[]>(`${API}/title?title=${title}`)
   }
 }

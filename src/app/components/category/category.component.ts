@@ -16,11 +16,10 @@ export class CategoryComponent {
     ){}
 
   showProducts(category: string) {
-    let listUpdated: Product[] = [];
+
     this.productservice.getByCategory(category).subscribe((categoryList) => {
-      listUpdated = categoryList
-      console.log(listUpdated);
-      this.productListService.sendUpdateList(listUpdated)
+
+      this.productListService.sendUpdateList(categoryList)
     })
   }
 

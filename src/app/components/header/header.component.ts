@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ProductListService } from './../services/product-list.service';
+import { Component, ViewChild } from '@angular/core';
 import { ProductsService } from '../services/products.service';
 
 @Component({
@@ -9,14 +10,31 @@ import { ProductsService } from '../services/products.service';
 export class HeaderComponent {
 
   isVisible: boolean = false;
+  @ViewChild('input') inputSeach!: string;
+  filter!: string;
 
-  constructor(private productsService: ProductsService) {}
+  constructor(
+    private productsService: ProductsService,
+    private productListService: ProductListService
+    ) {}
 
   toggleShowUl() {
     this.isVisible = !this.isVisible;
   }
 
-  showResult() {
-    // this.productsService.getAllProducts().then(res => console.log(res))
+  onKeyUp(target : any) {
+    if(target instanceof EventTarget) {
+      const elemento = target as HTMLInputElement;
+      this.filter = elemento.value;
+    }
+  }
+
+  showProductFilter() {
+    if(this.filter) {
+      const listFilterProducts = this.productsService.getByTitle(this.filter)
+        .subscribe(productList => {
+          this.productListService.sendUpdateList(productList)
+        })
+    }
   }
 }
