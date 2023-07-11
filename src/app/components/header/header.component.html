@@ -23,6 +23,6 @@
   </div>
   <div class="header__search">
     <input type="text" placeholder="Digite o produto" (keyup)="onKeyUp($event.target)">
-    <button (click)="showProductFilter()">Search</button>
+    <button (click)="showProductFilter()" (click)="goTo('products')">Search</button>
   </div>
 </header>

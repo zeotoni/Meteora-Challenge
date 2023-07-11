@@ -1,6 +1,7 @@
 import { ProductListService } from './../services/product-list.service';
 import { Component, ViewChild } from '@angular/core';
 import { ProductsService } from '../services/products.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -15,7 +16,8 @@ export class HeaderComponent {
 
   constructor(
     private productsService: ProductsService,
-    private productListService: ProductListService
+    private productListService: ProductListService,
+    private router: Router
     ) {}
 
   toggleShowUl() {
@@ -31,10 +33,14 @@ export class HeaderComponent {
 
   showProductFilter() {
     if(this.filter) {
-      const listFilterProducts = this.productsService.getByTitle(this.filter)
+      this.productsService.getByTitle(this.filter)
         .subscribe(productList => {
           this.productListService.sendUpdateList(productList)
         })
     }
+  }
+
+  goTo(fragment: any) {
+    this.router.navigateByUrl('#'+fragment);
   }
 }
