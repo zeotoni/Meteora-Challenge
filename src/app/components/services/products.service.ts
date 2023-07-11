@@ -3,7 +3,8 @@ import { HttpClient } from "@angular/common/http";
 import { Observable } from 'rxjs';
 import { Product } from '../products/product';
 
-const API = 'http://localhost:3000/products'
+// const API = 'http://localhost:3000/products'
+const API = 'https://meteora-api.onrender.com/products'
 
 @Injectable({
   providedIn: 'root'

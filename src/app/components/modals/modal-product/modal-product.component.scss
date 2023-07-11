@@ -124,9 +124,38 @@
               line-height: 20px;
             }
 
-            & input {
-              background-color: $primary-lilac;
+            & input[type="radio"] {
+              appearance: none;
+              border: 1px solid #DEE2E6;
+              padding: 8px;
+              border-radius: 25px;
 
+            }
+
+            input[type="radio"].input__azul{
+              background-color: $primary-blue;
+
+              &:checked {
+                background-image: radial-gradient($primary-blue 30%, $primary-lilac 40%);
+              }
+            }
+
+            input[type="radio"].input__offwhite{
+              background-color: $primary-offwhite;
+              &:checked {
+                background-image: radial-gradient($primary-offwhite 30%, $primary-lilac 40%);
+              }
+            }
+
+            input[type="radio"].input__preto{
+              background-color: $primary-black;
+              &:checked {
+                background-image: radial-gradient($primary-black 30%, $primary-lilac 50%);
+              }
+            }
+
+            & input[type="radio"]:checked {
+              background-image: radial-gradient($primary-white 30%, $primary-lilac 40%);
             }
           }
         }
