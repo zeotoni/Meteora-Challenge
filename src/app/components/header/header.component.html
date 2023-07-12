@@ -22,7 +22,7 @@
     </nav>
   </div>
   <div class="header__search">
-    <input #inputSearch type="text" placeholder="Digite o produto">
-    <button (click)="goTo('products')">Search</button>
+    <input #inputSearch type="text" placeholder="Digite o produto" (keyup)="onKeyUp($event.target)">
+    <button (click)="showProductFilter()" (click)="goTo('products')">Search</button>
   </div>
 </header>

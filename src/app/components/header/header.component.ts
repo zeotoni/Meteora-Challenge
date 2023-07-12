@@ -12,23 +12,28 @@ export class HeaderComponent {
 
   isVisible: boolean = false;
   @ViewChild('inputSearch') inputSearch: any;
-
+  filter!: string;
 
   constructor(
     private productsService: ProductsService,
     private productListService: ProductListService,
     private router: Router
-  ) {}
+    ) {}
 
   toggleShowUl() {
     this.isVisible = !this.isVisible;
   }
 
-  showProductFilter() {
-    if(this.inputSearch.nativeElement.value) {
-      console.log(this.inputSearch.nativeElement.value);
+  onKeyUp(target : any) {
+    if(target instanceof EventTarget) {
+      const element = target as HTMLInputElement;
+      this.filter = element.value;
+    }
+  }
 
-      this.productsService.getByTitle(this.inputSearch.nativeElement.value)
+  showProductFilter() {
+    if(this.filter) {
+      this.productsService.getByTitle(this.filter)
         .subscribe(productList => {
           this.productListService.sendUpdateList(productList)
         })
