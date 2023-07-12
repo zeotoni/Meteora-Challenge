@@ -11,33 +11,31 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
 
   isVisible: boolean = false;
-  @ViewChild('input') inputSeach!: string;
-  filter!: string;
+  @ViewChild('inputSearch') inputSearch: any;
+
 
   constructor(
     private productsService: ProductsService,
     private productListService: ProductListService,
     private router: Router
-    ) {}
+  ) {}
 
   toggleShowUl() {
     this.isVisible = !this.isVisible;
   }
 
-  onKeyUp(target : any) {
-    if(target instanceof EventTarget) {
-      const elemento = target as HTMLInputElement;
-      this.filter = elemento.value;
-    }
-  }
-
   showProductFilter() {
-    if(this.filter) {
-      this.productsService.getByTitle(this.filter)
+    if(this.inputSearch.nativeElement.value) {
+
+      this.productsService.getByTitle(this.inputSearch.nativeElement.value)
         .subscribe(productList => {
           this.productListService.sendUpdateList(productList)
         })
+
+      this.goTo('products');
+      this.inputSearch.nativeElement.value = ''
     }
+
   }
 
   goTo(fragment: any) {

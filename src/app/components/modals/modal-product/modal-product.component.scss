@@ -21,12 +21,17 @@
     justify-content: space-between;
     align-items: flex-start;
     background-color: $primary-black;
-    padding: 18px;
+    padding: 18px 28px 18px 18px;
     border-radius: 4px 4px 0 0;
 
     & div {
       display: flex;
       align-items: center;
+
+      & img {
+        width: 32px;
+        height: 32px;
+      }
 
       & h2 {
         color: $primary-white;
@@ -35,15 +40,18 @@
         font-weight: 500;
         line-height: normal;
         text-align: initial;
-        margin-left: 20px
+        margin-left: 20px;
+        width: 16ch;
       }
     }
 
     & button {
-      width: 16px;
-      height: 16px;
+      width: 18px;
+      height: 18px;
       border: none;
       background-color: inherit;
+      display: flex;
+      align-self: center;
     }
   }
 
@@ -134,9 +142,9 @@
 
             input[type="radio"].input__azul{
               background-color: $primary-blue;
-
               &:checked {
                 background-image: radial-gradient($primary-blue 30%, $primary-lilac 40%);
+                border: 1px solid $primary-lilac;
               }
             }
 
@@ -144,6 +152,7 @@
               background-color: $primary-offwhite;
               &:checked {
                 background-image: radial-gradient($primary-offwhite 30%, $primary-lilac 40%);
+                border: 1px solid $primary-lilac;
               }
             }
 
@@ -151,11 +160,13 @@
               background-color: $primary-black;
               &:checked {
                 background-image: radial-gradient($primary-black 30%, $primary-lilac 50%);
+                border: 1px solid $primary-lilac;
               }
             }
 
             & input[type="radio"]:checked {
               background-image: radial-gradient($primary-white 30%, $primary-lilac 40%);
+              border: 1px solid $primary-lilac;
             }
           }
         }
@@ -178,10 +189,11 @@
     top: 3%;
 
     &-header {
-      padding: 18px 22px;
+      padding: 18px 28px;
 
       & div > h2{
         font-size: 20px;
+        width: 30ch;
       }
 
       & button {

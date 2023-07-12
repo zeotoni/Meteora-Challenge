@@ -18,12 +18,17 @@
     justify-content: space-between;
     align-items: flex-start;
     background-color: $primary-black;
-    padding: 18px;
+    padding: 18px 28px 18px 18px;
     border-radius: 4px 4px 0 0;
 
     & div {
       display: flex;
       align-items: center;
+
+      & img {
+        width: 32px;
+        height: 32px;
+      }
 
       & h2 {
         color: $primary-white;
@@ -32,15 +37,18 @@
         font-weight: 500;
         line-height: normal;
         text-align: initial;
-        margin-left: 20px
+        margin-left: 20px;
+        width: 16ch
       }
     }
 
     & button {
-      width: 16px;
-      height: 16px;
+      width: 18px;
+      height: 18px;
       border: none;
       background-color: inherit;
+      display: flex;
+      align-self: center;
     }
   }
 
@@ -62,10 +70,11 @@
     width: 700px;
 
     &-header {
-      padding: 18px 22px;
+      padding: 18px 28px;
 
       & div > h2{
         font-size: 20px;
+        width: 30ch;
       }
 
       & button {

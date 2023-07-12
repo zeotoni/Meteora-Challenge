@@ -2,7 +2,7 @@
 
 
 .banner {
-  padding-top: 140px;
+  padding-top: 85px;
 
   & img {
     width: 100%;
@@ -33,7 +33,7 @@
 
 @media screen and (min-width: 768px) {
   .banner {
-    padding-top: 55px;
+    padding-top: 0;
 
     .carousel-caption {
       display: flex;
