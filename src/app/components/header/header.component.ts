@@ -26,13 +26,13 @@ export class HeaderComponent {
 
   showProductFilter() {
     if(this.inputSearch.nativeElement.value) {
+      console.log(this.inputSearch.nativeElement.value);
 
       this.productsService.getByTitle(this.inputSearch.nativeElement.value)
         .subscribe(productList => {
           this.productListService.sendUpdateList(productList)
         })
 
-      this.goTo('products');
       this.inputSearch.nativeElement.value = ''
     }
 
