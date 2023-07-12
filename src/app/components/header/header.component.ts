@@ -12,38 +12,28 @@ export class HeaderComponent {
 
   isVisible: boolean = false;
   @ViewChild('inputSearch') inputSearch: any;
-  filter!: string;
 
   constructor(
     private productsService: ProductsService,
     private productListService: ProductListService,
     private router: Router
-    ) {}
+  ) {}
 
   toggleShowUl() {
     this.isVisible = !this.isVisible;
   }
 
-  onKeyUp(target : any) {
-    if(target instanceof EventTarget) {
-      const element = target as HTMLInputElement;
-      this.filter = element.value;
-    }
-  }
-
   showProductFilter() {
-    if(this.filter) {
-      this.productsService.getByTitle(this.filter)
+    if(this.inputSearch.nativeElement.value) {
+
+      this.productsService.getByTitle(this.inputSearch.nativeElement.value)
         .subscribe(productList => {
           this.productListService.sendUpdateList(productList)
         })
-
-      this.inputSearch.nativeElement.value = ''
     }
 
+    this.router.navigateByUrl('#products');
+    this.inputSearch.nativeElement.value = '';
   }
 
-  goTo(fragment: any) {
-    this.router.navigateByUrl('#'+fragment);
-  }
 }
