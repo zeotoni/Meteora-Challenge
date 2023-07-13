@@ -10,6 +10,17 @@
   <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white">
   <img src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white">
 </p>
+
+
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Projeto Alura Challenge: Loja Meteora**
+| :label: Tecnologias | Angular, TypeScript, Bootstrap, Scss, MongoDb, NestJS
+| :rocket: URL         | https://meteora-challenge.vercel.app
+| :fire: Desafio     | https://url-do-desafio.com.br
+
+<!-- Inserir imagem com a #vitrinedev ao final do link -->
+![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
 <p>Olá<br>Bem vindos ao projeto Meteora. Esse projeto foi desenvolvido no Alura Challenge Front-End e conta com o desafio de criar um ecommerce fictício de produtos de moda. Nesse repositório vocês verão o meu resultado, bem como as ferramentas utilizadas por mim e minhas soluções para o desafio.</p>
 <h2>Descrição</h2>
 <p>O desafio proposto foi criar um site baseado no figma recebido, o ecommerce de moda Meteora. O site contém um carrossel mostrando o conceito da loja Meteora, uma seção de navegação por categorias, seção de pesquisa por produtos, modal com as características de cada produto e seção de cadastro na newsletter da loja. O projeto foi desenvolvido em Angular, Typescript, Scss e Bootstrap. Os dados dos produtos foram salvos no mongoDb e a api de integração foi feita com NestJs.</p>
