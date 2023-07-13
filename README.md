@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="./src/assets/Desktop/Logo desktop.png" width="600px">
+  <img src="https://github.com/zeotoni/Meteora-Challenge/assets/87879397/9f4ecc96-9692-423c-8a7a-01876fcfc8ae" width="600px">
 </p>
 <h1 align="center">Projeto Alura Challenge: Loja Meteora</h1>
 <p align="center">
@@ -14,7 +14,7 @@
 <h2>Descrição</h2>
 <p>O desafio proposto foi criar um site baseado no figma recebido, o ecommerce de moda Meteora. O site contém um carrossel mostrando o conceito da loja Meteora, uma seção de navegação por categorias, seção de pesquisa por produtos, modal com as características de cada produto e seção de cadastro na newsletter da loja. O projeto foi desenvolvido em Angular, Typescript, Scss e Bootstrap. Os dados dos produtos foram salvos no mongoDb e a api de integração foi feita com NestJs.</p>
 <h2>Funcionalidades</h2>
-
+<br>
 
 * Responsividade 
 * Modais dinâmicas
@@ -26,11 +26,10 @@
 
 
 <div display="flex">
-  <img src="https://user-images.githubusercontent.com/87879397/225762060-660ab76e-bf62-4dbb-9617-5e059530d15d.png" width="300px">
-  <img src="https://user-images.githubusercontent.com/87879397/225762069-aba53adc-1283-40f9-a018-0eed6f303478.png" width="300px">
-  <img src="https://user-images.githubusercontent.com/87879397/225762055-e519e2f6-4761-4824-afff-4230bddd0bfb.png" width="300px">
-   <img src="https://user-images.githubusercontent.com/87879397/225764893-b0343916-19f7-498d-bc25-c5cb9408aaed.png" width="300px">
-  <img src="https://user-images.githubusercontent.com/87879397/225762041-64451fab-1912-4e53-9859-634a5d8ca85f.png" width="300px">
+  <img src="https://github.com/zeotoni/Meteora-Challenge/assets/87879397/f41ab968-270d-4f09-8d91-1fa8da4221f8" width="300px" height="250px">
+  <img src="https://github.com/zeotoni/Meteora-Challenge/assets/87879397/75fce844-0e08-417d-9e6c-d87a6c93a055" width="300px" height="250px">
+  <img src="https://github.com/zeotoni/Meteora-Challenge/assets/87879397/644ea36f-a254-465a-8aa8-bc2976f7d3a3" width="300px" height="250px">
+
 </div>
 
 
