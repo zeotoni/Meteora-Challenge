@@ -22,7 +22,7 @@
     </nav>
   </div>
   <div class="header__search">
-    <input #inputSearch type="text" placeholder="Digite o produto" (keyup.enter)="showProductFilter(inputSearch.value)">
-    <button (click)="showProductFilter(inputSearch.value)">Search</button>
+    <input #inputSearch type="text" placeholder="Digite o produto" (keyup.enter)="showProductFilter(inputSearch.value)" aria-label="Input para pesquisa de produto">
+    <button (click)="showProductFilter(inputSearch.value)" aria-label="Botão pesquisar produto">Search</button>
   </div>
 </header>

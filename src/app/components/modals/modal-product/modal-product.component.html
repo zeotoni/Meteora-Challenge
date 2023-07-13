@@ -1,10 +1,10 @@
-<dialog class="products__modal" #modal>
+<dialog class="products__modal" #modal appFocusTrap>
   <div class="products__modal-header">
     <div>
       <img src="assets/check-circle.svg" alt="Ícone de check">
       <h2>Confira detalhes sobre o produto</h2>
     </div>
-    <button type="submit" (click)="modal.close()"><img src="assets/⭐️ Icon.svg" alt="Ícone de x"></button>
+    <button type="submit" aria-label="fechar modal" (click)="modal.close()"><img src="assets/⭐️ Icon.svg" alt="Ícone de x"></button>
   </div>
   <div class="products__modal-body">
     <img [src]="image" [alt]="alt">

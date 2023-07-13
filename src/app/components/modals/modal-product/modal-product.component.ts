@@ -1,11 +1,11 @@
-import { Component, ElementRef, Input } from '@angular/core';
+import { Component, ElementRef, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-modal-product',
   templateUrl: './modal-product.component.html',
   styleUrls: ['./modal-product.component.scss']
 })
-export class ModalProductComponent {
+export class ModalProductComponent{
 
   nativeElement: HTMLElement;
 

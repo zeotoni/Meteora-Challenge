@@ -14,8 +14,8 @@ export class ProductComponent {
   @Input() title = '';
   @Input() description = '';
   @Input() price = '';
-  @Input() store = '';
   @Input() category = '';
+  @Input() store = '';
 
   showModal(){
     this.modalTemplateRef.nativeElement.firstChild.showModal();
