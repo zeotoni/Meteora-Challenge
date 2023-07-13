@@ -4,10 +4,6 @@
   background-color: $primary-black;
   padding: 22px;
   font-family: 'Inter', sans-serif;
-  // position: fixed;
-  // width: 100%;
-  // z-index: 10;
-
 
   &__logo {
     width: 125px;
@@ -249,8 +245,8 @@
             font-size: 16px;
 
             &:hover {
-              text-decoration: underline;
-              transition: 0.4s ease-in-out;
+              color: $primary-yellow;
+              font-weight: 700;
             }
           }
         }
@@ -275,6 +271,8 @@
           cursor: pointer;
           background-color: $secondary-gray;
           transition: 0.3s ease-in-out;
+          color: $primary-yellow;
+          font-weight: 700;
         }
       }
     }

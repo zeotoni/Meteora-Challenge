@@ -1,6 +1,6 @@
-import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ProductsService } from '../services/products.service';
-import { Observable, Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { Product } from './product';
 import { ProductListService } from '../services/product-list.service';
 
@@ -39,8 +39,4 @@ export class ProductsComponent implements OnInit, AfterViewInit{
       this.products = list;
     })
   }
-
-
-
-
 }

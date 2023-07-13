@@ -21,5 +21,11 @@ $title-gray: #212529;
   border: solid 1px $primary-lilac;
   padding: 9px 16px;
   border-radius: 0;
+
+  &:hover {
+    color: $primary-yellow;
+    font-weight: 700;
+    background-color: #a77af5;
+  }
 }
 

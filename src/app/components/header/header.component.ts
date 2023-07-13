@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
 
   isVisible: boolean = false;
+
   @ViewChild('inputSearch') inputSearch: any;
 
   constructor(
@@ -23,17 +24,23 @@ export class HeaderComponent {
     this.isVisible = !this.isVisible;
   }
 
-  showProductFilter() {
-    if(this.inputSearch.nativeElement.value) {
+  showProductFilter(value: string) {
 
-      this.productsService.getByTitle(this.inputSearch.nativeElement.value)
+    if(value) {
+      this.productsService.getByTitle(value)
         .subscribe(productList => {
           this.productListService.sendUpdateList(productList)
-        })
+        });
+      this.router.navigateByUrl('#products');
+      setTimeout(() => {
+        this.hideKeyboard();
+        this.inputSearch.nativeElement.value = '';
+      }, 800);
     }
+  }
 
-    this.router.navigateByUrl('#products');
-    this.inputSearch.nativeElement.value = '';
+  hideKeyboard() {
+    (document.activeElement as HTMLElement).blur();
   }
 
 }

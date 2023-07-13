@@ -78,9 +78,19 @@
         & img {
           width: 160px;
         }
-      }
-      &:hover {
-        cursor: pointer;
+
+        &:hover > img {
+          cursor: pointer;
+          width: 180px;
+          height: 180px;
+          transition: .4s ease-in-out;
+        }
+
+        &:hover > p {
+          color: $primary-yellow;
+          font-size: 18px;
+          font-weight: 700;
+        }
       }
     }
   }
