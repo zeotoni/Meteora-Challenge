@@ -29,6 +29,7 @@
   <img src="https://github.com/zeotoni/Meteora-Challenge/assets/87879397/f41ab968-270d-4f09-8d91-1fa8da4221f8" width="300px" height="250px">
   <img src="https://github.com/zeotoni/Meteora-Challenge/assets/87879397/75fce844-0e08-417d-9e6c-d87a6c93a055" width="300px" height="250px">
   <img src="https://github.com/zeotoni/Meteora-Challenge/assets/87879397/644ea36f-a254-465a-8aa8-bc2976f7d3a3" width="300px" height="250px">
+  <img src="https://github.com/zeotoni/Meteora-Challenge/assets/87879397/43b85fcb-48bc-4579-ae21-7f7f0183c304" width="300px" height="250px">
 
 </div>
 
