@@ -1,4 +1,4 @@
-![Captura de tela de 2023-07-13 12-59-05](https://github.com/zeotoni/Meteora-Challenge/assets/87879397/f40c9e96-ee4e-4666-a0b9-0ddee78fc931)<p align="center"> 
+<p align="center"> 
   <img src="https://github.com/zeotoni/Meteora-Challenge/assets/87879397/9f4ecc96-9692-423c-8a7a-01876fcfc8ae" width="600px">
 </p>
 <h1 align="center">Projeto Alura Challenge: Loja Meteora</h1>
@@ -20,7 +20,7 @@
 
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
+![](https://github.com/zeotoni/Meteora-Challenge/assets/87879397/f40c9e96-ee4e-4666-a0b9-0ddee78fc931#vitrinedev)
 <p>Olá<br>Bem vindos ao projeto Meteora. Esse projeto foi desenvolvido no Alura Challenge Front-End e conta com o desafio de criar um ecommerce fictício de produtos de moda. Nesse repositório vocês verão o meu resultado, bem como as ferramentas utilizadas por mim e minhas soluções para o desafio.</p>
 <h2>Descrição</h2>
 <p>O desafio proposto foi criar um site baseado no figma recebido, o ecommerce de moda Meteora. O site contém um carrossel mostrando o conceito da loja Meteora, uma seção de navegação por categorias, seção de pesquisa por produtos, modal com as características de cada produto e seção de cadastro na newsletter da loja. O projeto foi desenvolvido em Angular, Typescript, Scss e Bootstrap. Os dados dos produtos foram salvos no mongoDb e a api de integração foi feita com NestJs.</p>
