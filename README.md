@@ -17,7 +17,7 @@
 | :sparkles: Nome        | **Projeto Alura Challenge: Loja Meteora**
 | :label: Tecnologias | Angular, TypeScript, Bootstrap, Scss, MongoDb, NestJS
 | :rocket: URL         | https://meteora-challenge.vercel.app
-
+:fire: Desafio	
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
 ![](https://github.com/zeotoni/Meteora-Challenge/assets/87879397/f40c9e96-ee4e-4666-a0b9-0ddee78fc931#vitrinedev)
