@@ -14,6 +14,7 @@ export class ProductsComponent implements OnInit, AfterViewInit{
   @ViewChild('modal') modalTemplateRef!: ElementRef;
   products!: Product[];
   subscriptionList!: Subscription;
+  errorSearchMessage!: string;
 
   constructor(
     private productsService: ProductsService,
@@ -28,6 +29,7 @@ export class ProductsComponent implements OnInit, AfterViewInit{
 
   ngAfterViewInit(): void {
     this.getProductsList();
+
   }
 
   showModal(){
@@ -36,7 +38,16 @@ export class ProductsComponent implements OnInit, AfterViewInit{
 
   getProductsList() {
     this.subscriptionList = this.productListService.getUpdatedList().subscribe((list) => {
-      this.products = list;
+      console.log(list);
+
+      if(!list.length) {
+        this.errorSearchMessage = 'Nenhum produto correspondente encontrado!'
+        this.products = this.products;
+      } else {
+        this.products = list;
+        this.errorSearchMessage = '';
+      }
+
     })
   }
 }

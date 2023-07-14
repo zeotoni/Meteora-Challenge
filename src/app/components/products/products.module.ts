@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductsComponent } from './products.component';
 import { ModalsModule } from '../modals/modals.module';
+import { MessageModule } from '../message/message.module';
 
 
 
@@ -13,7 +14,8 @@ import { ModalsModule } from '../modals/modals.module';
   ],
   imports: [
     CommonModule,
-    ModalsModule
+    ModalsModule,
+    MessageModule
   ],
   exports: [
     ProductsComponent,

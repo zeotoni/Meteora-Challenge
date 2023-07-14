@@ -1,13 +1,15 @@
-import { Component, ElementRef, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-modal-product',
   templateUrl: './modal-product.component.html',
   styleUrls: ['./modal-product.component.scss']
 })
-export class ModalProductComponent{
+export class ModalProductComponent {
 
   nativeElement: HTMLElement;
+
 
   @Input() image = ''
   @Input() alt = '';
@@ -20,4 +22,5 @@ export class ModalProductComponent{
   constructor(element: ElementRef) {
     this.nativeElement = element.nativeElement;
   }
+
 }

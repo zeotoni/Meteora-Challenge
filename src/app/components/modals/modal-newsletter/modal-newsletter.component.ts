@@ -1,5 +1,6 @@
 import { Component, ElementRef } from '@angular/core';
 
+
 @Component({
   selector: 'app-modal-newsletter',
   templateUrl: './modal-newsletter.component.html',
