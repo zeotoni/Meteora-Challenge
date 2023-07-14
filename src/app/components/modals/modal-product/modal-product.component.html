@@ -33,28 +33,28 @@
             </div>
           </div>
         </div>
-        <div class="form__section">
+        <div class="form__section" *ngIf="isVisible">
           <p>Tamanhos:</p>
           <div class="form__section-inputs">
             <div>
               <input name="size" id="tamanho-p" value="tamanho-p" type="radio" required>
-              <label for="tamanho-p">P</label>
+              <label for="tamanho-p">{{listSizes[0]}}</label>
             </div>
             <div>
               <input name="size" id="tamanho-pp" value="tamanho-pp" type="radio" required>
-              <label for="tamanho-pp">PP</label>
+              <label for="tamanho-pp">{{listSizes[1]}}</label>
             </div>
             <div>
               <input name="size" id="tamanho-m" value="tamanho-m" type="radio" required>
-              <label for="tamanho-m">M</label>
+              <label for="tamanho-m">{{listSizes[2]}}</label>
             </div>
             <div>
               <input name="size" id="tamanho-g" value="tamanho-g" type="radio" required>
-              <label for="tamanho-g">G</label>
+              <label for="tamanho-g">{{listSizes[3]}}</label>
             </div>
             <div>
               <input name="size" id="tamanho-gg" value="tamanho-gg" type="radio" required>
-              <label for="tamanho-gg">GG</label>
+              <label for="tamanho-gg">{{listSizes[4]}}</label>
             </div>
           </div>
         </div>

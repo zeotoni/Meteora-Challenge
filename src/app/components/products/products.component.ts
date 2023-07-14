@@ -38,11 +38,9 @@ export class ProductsComponent implements OnInit, AfterViewInit{
 
   getProductsList() {
     this.subscriptionList = this.productListService.getUpdatedList().subscribe((list) => {
-      console.log(list);
 
       if(!list.length) {
-        this.errorSearchMessage = 'Nenhum produto correspondente encontrado!'
-        this.products = this.products;
+        this.errorSearchMessage = 'Nenhum produto correspondente encontrado!';
       } else {
         this.products = list;
         this.errorSearchMessage = '';
