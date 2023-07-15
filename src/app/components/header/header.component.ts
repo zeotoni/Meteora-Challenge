@@ -31,11 +31,13 @@ export class HeaderComponent {
         .subscribe(productList => {
           this.productListService.sendUpdateList(productList)
         });
-      this.router.navigateByUrl('#products');
-      setTimeout(() => {
-        this.hideKeyboard();
-        this.inputSearch.nativeElement.value = '';
-      }, 800);
+        this.router.navigateByUrl('#products');
+        setTimeout(() => {
+          this.hideKeyboard();
+        }, 800);
+        setTimeout(() => {
+          this.inputSearch.nativeElement.value = '';
+        }, 2000)
     }
   }
 
