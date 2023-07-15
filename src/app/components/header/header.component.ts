@@ -35,14 +35,14 @@ export class HeaderComponent {
         setTimeout(() => {
           this.hideKeyboard();
         }, 800);
-        setTimeout(() => {
-          this.inputSearch.nativeElement.value = '';
-        }, 2000)
     }
   }
 
   hideKeyboard() {
     (document.activeElement as HTMLElement).blur();
+    setTimeout(() => {
+      this.inputSearch.nativeElement.value = '';
+    }, 2000)
   }
 
 }
