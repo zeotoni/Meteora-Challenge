@@ -4,13 +4,15 @@ import { CommonModule } from '@angular/common';
 import { ProductsComponent } from './products.component';
 import { ModalsModule } from '../modals/modals.module';
 import { MessageModule } from '../message/message.module';
+import { LoaderComponent } from './loader/loader.component';
 
 
 
 @NgModule({
   declarations: [
     ProductsComponent,
-    ProductComponent
+    ProductComponent,
+    LoaderComponent
   ],
   imports: [
     CommonModule,

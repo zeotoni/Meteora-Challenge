@@ -13,7 +13,8 @@ import { FacilitiesModule } from './components/facilities/facilities.module';
 import { NewsletterModule } from './components/newsletter/newsletter.module';
 import { FooterModule } from './components/footer/footer.module';
 import { ModalsModule } from './components/modals/modals.module';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { LoaderInterceptor } from './components/products/loader/loader.interceptor';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,13 @@ import { HttpClientModule } from '@angular/common/http';
     FooterModule,
     ModalsModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: LoaderInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

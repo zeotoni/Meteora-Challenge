@@ -1,0 +1,33 @@
+@import 'assets/scss/_base.scss';
+
+.loader__container {
+
+  padding-top: 48px;
+
+  & p {
+    font-weight: 500;
+    font-size: 22px;
+    padding-bottom: 30px;
+  }
+
+  .loader {
+    width: 40px;
+    height: 40px;
+    border: 5px solid $primary-black;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
